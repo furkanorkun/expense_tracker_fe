@@ -7,15 +7,15 @@ import userReducer from "./reducers/userReducer";
 
 interface AppState {
     user: UserState,
-    categories: any,
-    records: any
+/*     categories: any,
+    records: any */
 }
 
 const rootReducer = combineReducers<AppState>({
     //Bunlar global state içerisinde tutulacak key'ler.
     user: userReducer,
-    categories: () => {},
-    records: () => {},
+    // categories: () => {},
+    // records: () => {},
 })
 
 export default rootReducer;
